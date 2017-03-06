@@ -99,7 +99,7 @@ apt_install libstdc++6
 
 URL='http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.4_amd64.deb';
 FILE=`mktemp`; 
-wget "$URL" -qO $FILE && sudo dpkg -i $FILE; 
+wget "$URL" -qO $FILE && dpkg -i $FILE; 
 rm $FILE
 
 
