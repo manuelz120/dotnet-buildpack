@@ -95,6 +95,14 @@ echo "Installing the dependencies"
 apt_install libunwind8 gettext libicu-dev libicu52
 apt_install libstdc++6
 
+
+
+URL='http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.4_amd64.deb';
+FILE=`mktemp`; 
+wget "$URL" -qO $FILE && sudo dpkg -i $FILE; 
+rm $FILE
+
+
 mkdir -p ${BUILD_DIR}/dotnet
 
 echo "Installing .NET CORE ${CORE_VERSION} from ${CORE_DOWNLOAD_LOCATION}"
