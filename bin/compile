@@ -92,7 +92,7 @@ fi
 CORE_DOWNLOAD_LOCATION="https://download.microsoft.com/download/8/C/9/8C9182C7-9DCD-40C1-B72A-BEC4C3FC1FC1/dotnet-dev-ubuntu-x64.1.0.0-preview2.1-003155.tar.gz"
 
 echo "Installing the dependencies"
-apt_install libunwind8 gettext libicu-dev
+apt_install libunwind8 gettext libicu-dev libicu52
 apt_install libstdc++6
 
 mkdir -p ${BUILD_DIR}/dotnet
